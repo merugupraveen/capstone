@@ -1,0 +1,165 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b1220;
+  color: #e8eefc;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.toolbar {
+  width: min(720px, 92vw);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.fieldLabel {
+  font-size: 12px;
+  color: #b9c7ee;
+}
+
+.select {
+  min-width: 220px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #2b3b63;
+  background: #111a2e;
+  color: #e8eefc;
+}
+
+.toolbarActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.panels {
+  width: min(720px, 92vw);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  background: #0f172b;
+  border: 1px solid #23304f;
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.panelHeader h2 {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.listItem {
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #23304f;
+  background: #111a2e;
+}
+
+.listItemButton {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.listItemMeta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 6px;
+  color: #b9c7ee;
+  font-size: 12px;
+}
+
+.muted {
+  margin: 10px 0 0;
+  color: #b9c7ee;
+  font-size: 13px;
+}
+
+.toast {
+  width: min(720px, 92vw);
+  min-height: 1.25em;
+  color: #b9c7ee;
+}
+
+h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.card {
+  width: min(720px, 92vw);
+  background: #111a2e;
+  border: 1px solid #23304f;
+  border-radius: 14px;
+  padding: 22px;
+}
+
+.quote {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.author {
+  margin: 12px 0 0;
+  color: #b9c7ee;
+  font-size: 16px;
+}
+
+.btn {
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #2b3b63;
+  background: #1b2a4a;
+  color: #e8eefc;
+  cursor: pointer;
+}
+
+.btn:hover { background: #21335c; }
+
+.error {
+  margin: 0;
+  min-height: 1.25em;
+  color: #ffb4b4;
+}

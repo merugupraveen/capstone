@@ -1,0 +1,9 @@
+[
+  { "text": "Simplicity is the soul of efficiency.", "author": "Austin Freeman", "category": "Inspirational" },
+  { "text": "First, solve the problem. Then, write the code.", "author": "John Johnson", "category": "Inspirational" },
+  { "text": "Programs must be written for people to read, and only incidentally for machines to execute.", "author": "Harold Abelson", "category": "Programming" },
+  { "text": "Make it work, make it right, make it fast.", "author": "Kent Beck", "category": "Programming" },
+  { "text": "The only way to go fast, is to go well.", "author": "Robert C. Martin", "category": "Inspirational" },
+  { "text": "Code is like humor. When you have to explain it, it’s bad.", "author": "Cory House", "category": "Programming" },
+  { "text": "Do or do not. There is no try.", "author": null, "category": "Inspirational" }
+]

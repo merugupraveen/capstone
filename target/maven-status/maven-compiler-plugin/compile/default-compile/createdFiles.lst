@@ -1,0 +1,4 @@
+com\epam\capstone\quote\QuoteController.class
+com\epam\capstone\quote\QuoteService.class
+com\epam\capstone\quote\QuoteResponse.class
+com\epam\capstone\CapstoneApplication.class

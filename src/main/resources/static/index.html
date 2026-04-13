@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Quote - MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Random Quotes</h1>
+
+    <div class="toolbar">
+      <label class="field">
+        <span class="fieldLabel">Category</span>
+        <select id="categorySelect" class="select">
+          <option value="all">All</option>
+        </select>
+      </label>
+
+      <div class="toolbarActions">
+        <button id="btnShow" class="btn" type="button">Show Quote</button>
+        <button id="btnCopy" class="btn" type="button" disabled>Copy</button>
+        <button id="btnFavorite" class="btn" type="button" disabled>Favorite</button>
+      </div>
+    </div>
+
+    <section class="card" aria-live="polite">
+      <p id="quoteText" class="quote">Click "Show Quote" to get a quote.</p>
+      <p id="quoteAuthor" class="author"></p>
+    </section>
+
+    <div class="panels">
+      <section class="panel">
+        <div class="panelHeader">
+          <h2>History</h2>
+        </div>
+        <ul id="historyList" class="list"></ul>
+        <p id="historyEmpty" class="muted">No history yet. Click Show Quote.</p>
+      </section>
+
+      <section class="panel">
+        <div class="panelHeader">
+          <h2>Favorites</h2>
+        </div>
+        <ul id="favoritesList" class="list"></ul>
+        <p id="favoritesEmpty" class="muted">No favorites yet. Tap Favorite on a quote.</p>
+      </section>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <p id="error" class="error" role="alert"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
